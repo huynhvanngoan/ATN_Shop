@@ -1,6 +1,6 @@
 <h1>Product list</h1>
 
-<a href="/products/addProduct" class="btn btn-primary"><i class="fa fa-plus"></i>Add new a product</a>
+<a href="/products/addProduct" class="btn btn-primary"><i class="fa fa-plus"></i>Add new a product </a>
 
 <br><br>
 <form action="/products/doSearch" method="POST">
@@ -14,15 +14,17 @@
 </form>
 
 <table class="table table-bordered">
-    <tr
+    <tr>
+        <th>ID</th>
         <th>Name</th>
-        <th>Price</th>
+        <th>Price/th>
         <th>Description</th>
         <th>Image</th>
         <th>    </th>
     </tr>
     {{#each product3}}
     <tr>
+        <td>{{{_id}}}</td>
         <td>{{{name}}}</td>
         <td>{{{price}}}</td>
         <td>{{{description}}}</td>
