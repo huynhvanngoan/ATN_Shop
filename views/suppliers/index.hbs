@@ -20,8 +20,8 @@
         <td>{{{address}}}</td>
         <td>{{{description}}}</td>
         <td>
+            <a href="/suppliers/update?id={{{_id}}}"><i class="fa fa-pen"></i></a>
             <a href="/suppliers/view?id={{{_id}}}"><i class="fa fa-eye"></i></a>
-            <a href="/suppliers/update?id={{{_id}}}"><i class="fa fa-pen"></i></a>  
             <a onclick="return confirm('Confirm Delete?')" href="/suppliers/delete?id={{{_id}}}"><i class="fa fa-trash"></i></a>
         </td>
     </tr>
